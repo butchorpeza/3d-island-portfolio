@@ -1,11 +1,29 @@
 import { Link } from "react-router-dom";
 
-import { arrow } from "../assets/icons";
+const ArrowIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="w-4 h-4"
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+);
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
-      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+      <h1
+        className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'
+        style={{
+          backgroundImage: "linear-gradient(to bottom right, #4a1f1f, #2a1512)",
+        }}
+      >
         Hi, I'm
         <span className='font-semibold mx-2 text-white'>Adrian</span>
         👋
@@ -23,7 +41,7 @@ const HomeInfo = ({ currentStage }) => {
 
         <Link to='/about' className='neo-brutalism-white neo-btn'>
           Learn more
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <ArrowIcon />
         </Link>
       </div>
     );
@@ -38,7 +56,7 @@ const HomeInfo = ({ currentStage }) => {
 
         <Link to='/projects' className='neo-brutalism-white neo-btn'>
           Visit my portfolio
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <ArrowIcon />
         </Link>
       </div>
     );
@@ -53,7 +71,7 @@ const HomeInfo = ({ currentStage }) => {
 
       <Link to='/contact' className='neo-brutalism-white neo-btn'>
         Let's talk
-        <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+        <ArrowIcon />
       </Link>
     </div>
     );

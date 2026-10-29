@@ -4,12 +4,12 @@ import { socialLinks } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className='footer font-poppins'>
-      <hr className='border-slate-200' />
+    <footer className='footer font-poppins bg-[#F5F1E8] text-[#2B2723]'>
+      <hr className='border-[#D8C8B5]' />
 
       <div className='footer-container'>
         <p>
-          © 2023 <strong>Adrian Hajdin</strong>. All rights reserved.
+          © 2026 <strong>Butch Orpeza</strong>. All rights reserved.
         </p>
 
         <div className='flex gap-3 justify-center items-center'>

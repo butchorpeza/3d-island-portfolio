@@ -4,6 +4,9 @@ import Loader from "./Loader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import HomeInfo from "./HomeInfo";
+import { WindTrail } from "./WindTrail";
+import ProjectCard from "./ProjectCard";
+import CaseStudyModal from "./CaseStudyModal";
 
 export {
     CTA,
@@ -11,5 +14,8 @@ export {
     Loader,
     Navbar,
     Footer,
-    HomeInfo
+    HomeInfo,
+    WindTrail,
+    ProjectCard,
+    CaseStudyModal
 }
